@@ -1,0 +1,225 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  margin: 0;
+  background: linear-gradient(-270deg, #f8f8f8 0%, #fff 100%);
+  border-top: 1px solid #d9fff5;
+  padding: 16px;
+}
+
+.main {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+.h-menu-brands {
+  margin: 0;
+  color: #7e7e82;
+  font-family: TT Lakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+}
+
+.button-menu-brands {
+  width: 240px;
+  height: 72px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background: #fff;
+  margin: 16px;
+  margin-left: 0;
+  padding: 0;
+  text-align: left;
+}
+
+.buttonA {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+
+.button-menu-brands__img {
+  height: auto;
+  overflow: auto;
+  margin: auto;
+  margin-left: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  vertical-align: middle;
+  padding-left: 16px;
+}
+
+.button-menu-brands__img--lenovo {
+  width: 105px;
+}
+
+.button-menu-brands__img--samsung {
+  width: 115px;
+}
+
+.button-menu-brands__img--apple {
+  width: 45px;
+}
+
+.button-menu-brands__img--viewSonic {
+  width: 125px;
+}
+
+.button-menu-brands__img--bosch {
+  width: 125px;
+}
+
+.button-menu-brands__img--hp {
+  width: 50px;
+}
+
+.button-menu-brands__img--acer {
+  width: 95px;
+}
+
+.button-menu-brands__img--sony {
+  width: 125px;
+}
+
+.button-menu--goToBrand {
+  background-image: url(../img.brend/go.svg);
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.button-menu {
+  /*перенос из 1.3*/
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 0;
+}
+
+/*кнопка далее из 1.3*/
+.button-read-more {
+  height: 25px;
+  border: 0;
+  background-color: #f8f8f8;
+  padding: 0;
+}
+
+.button-read-more__icon {
+  background-image: url(../img.brend/icon_button.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.button-read-more__icon--hidden {
+  transform: rotate(180deg);
+}
+
+.button-read-more__text {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  font-weight: 500;
+  margin: 0;
+  display: inline-block;
+  vertical-align: top;
+  font-family: "TT Lakes";
+  text-decoration: none;
+  color: #1b1c21;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin-left: 30px;
+  }
+
+  .menu-brands {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .button-menu-brands {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .button-read-more {
+    display: none;
+  }
+
+  .swiper-slide {
+    width: 240px !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1119px) {
+  .main {
+    margin-right: 0;
+  }
+
+  .button-menu-brands {
+    margin-right: 15px;
+  }
+
+  .button-menu-brands {
+    max-width: 224px;
+  }
+
+  .button-menu-brands--hidden,
+  .button-menu-brands--hiddenDesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1349px) {
+  .button-menu-brands:nth-child(4n) {
+    margin-right: 0;
+  }
+
+  .button-menu-brands {
+    max-width: 240px;
+  }
+  .button-menu-brands--hiddenDesktop {
+    display: none;
+  }
+}
+
+@media (min-width: 1350px) {
+  .header {
+    padding-left: 30px;
+  }
+
+  .button-menu-brands {
+    max-width: 240px;
+  }
+
+  .button-menu-brands--hiddenDesktop {
+    display: none;
+  }
+}
